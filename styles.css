@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root {
+    /* colors */
+    --clr-black: 240, 5%, 11%;
+    --clr-gray: 240, 1%, 31%;
+    --clr-dark-red: 348, 53%, 28%;
+    --clr-dark-pink: 348, 53%, 28%;
+    --clr-light-red: 342, 93%, 40%;
+
+    /* font-sizes */
+    --fs-700: 6rem;
+    --fs-600: 4.375rem;
+    --fs-500: 3.75rem;
+    --fs-450: 3.125rem;
+    --fs-400: 2.25rem;
+    --fs-375: 2rem;
+    --fs-350: 1.5rem;
+    --fs-300: 1.375rem;
+    --fs-200: 1.125rem;
+    --fs-100: 1rem;
+
+    /* font-families */
+    --ff-bebas: 'Bebas Neue', cursive;
+}
+
+/* ------------------- */
+/* Reset               */
+/* ------------------- */
+
+/* https://piccalil.li/blog/a-modern-css-reset/ */
+
+/* Box sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Reset margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+section,
+figure,
+picture {
+    margin: 0; 
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-weight: 300;
+}
+
+/* set up the body */
+body {
+    font-family: var(--ff-bebas);
+    min-height: 100vh;
+    background-color: hsl(var(--clr-black));
+    color: white;
+    text-transform: uppercase;
+}
+
+/* make images easier to work with */
+img,
+picutre {
+    max-width: 100%;
+    display: block;
+}
+
+/* make form elements easier to work with */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* remove animations for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* colors */
+
+.text-black { color: hsl(var(--clr-black)); }
+.text-gray { color: hsl(var(--clr-gray)); }
+.text-dark-red { color: hsl(var(--clr-dark-red)); }
+.text-light-red { color: hsl(var(--clr-light-red)); }
+.text-dark-pink { color: hsl(var(--clr-dark-pink)); }
+
+/* typography */
+
+.uppercase { text-transform: uppercase; }
+
+.fs-700 { font-size: var(--fs-700); }
+.fs-600 { font-size: var(--fs-600); }
+.fs-500 { font-size: var(--fs-500); }
+.fs-450 { font-size: var(--fs-450); }
+.fs-400 { font-size: var(--fs-400); }
+.fs-375 { font-size: var(--fs-375); }
+.fs-350 { font-size: var(--fs-350); }
+.fs-300 { font-size: var(--fs-300); }
+.fs-200 { font-size: var(--fs-200); }
+.fs-100 { font-size: var(--fs-100); }
