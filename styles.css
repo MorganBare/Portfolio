@@ -9,14 +9,12 @@
     --clr-light-red: 342, 93%, 40%;
 
     /* font-sizes */
-    --fs-700: 6rem;
-    --fs-600: 4.375rem;
-    --fs-500: 3.75rem;
-    --fs-450: 3.125rem;
-    --fs-400: 2.25rem;
-    --fs-375: 2rem;
-    --fs-350: 1.5rem;
-    --fs-300: 1.375rem;
+    --fs-700: 14.375rem;
+    --fs-600: 10rem;
+    --fs-500: 2.5rem;
+    --fs-450: 2.25rem;
+    --fs-400: 1.875rem;
+    --fs-300: 1.687rem;
     --fs-200: 1.125rem;
     --fs-100: 1rem;
 
@@ -119,3 +117,109 @@ select {
 .fs-300 { font-size: var(--fs-300); }
 .fs-200 { font-size: var(--fs-200); }
 .fs-100 { font-size: var(--fs-100); }
+
+
+/* components */
+
+.flex {
+    display: flex;
+}
+
+header{
+    justify-content: space-between;
+    padding: 1.5em 1em;
+}
+
+.mobile-name {
+    order: 1;
+    font-size: var(--fs-300);
+}
+
+.top-nav {
+    display: none;
+}
+
+.top-nav-ul {
+    list-style: none;
+    flex-direction: column;
+    margin: 0;
+}
+
+/* Hiding the second list item/name for mobile view */ 
+.top-nav-ul li:nth-child(2){
+    display: none;
+}
+
+/* not enough room for this on mobile*/
+.left {
+    display: none;
+}
+
+/* not enough room for this on mobile*/
+.right {
+    display: none;
+}
+
+.left ul {
+    list-style: none;
+}
+
+
+/* mobile hamburger icon */
+
+label{
+    display:flex;
+    order: 2;
+    flex-direction:column;
+    width:50px;
+    cursor:pointer;
+    align-items: flex-end
+   }
+   
+label span{
+    background: #fff;
+    height:4px;
+    margin: 4px 0;
+    transition: .4s  cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
+   
+span:nth-of-type(1){
+    width:55%;
+}
+
+span:nth-of-type(2){
+    width:100%;
+}
+
+
+span:nth-of-type(3){
+    width:70%;
+}
+
+
+input[type="checkbox"]{
+    display:none;
+}
+
+
+input[type="checkbox"]:checked ~ span:nth-of-type(1){
+    transform-origin:bottom;
+    transform:rotatez(-45deg) translate(-5px,0px)
+}
+
+
+input[type="checkbox"]:checked ~ span:nth-of-type(2){
+    
+    transform-origin:top;
+    transform:rotatez(45deg)
+}
+
+
+input[type="checkbox"]:checked ~ span:nth-of-type(3){
+    
+    transform-origin:bottom;
+    width:50%;
+    transform: translate(-21px, -4px) rotatez(-45deg);
+
+}
+   
