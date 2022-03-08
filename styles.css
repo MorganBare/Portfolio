@@ -136,7 +136,7 @@ header{
 }
 
 .top-nav {
-    display: none;
+    
 }
 
 .top-nav-ul {
@@ -145,10 +145,6 @@ header{
     margin: 0;
 }
 
-/* Hiding the second list item/name for mobile view */ 
-.top-nav-ul li:nth-child(2){
-    display: none;
-}
 
 /* not enough room for this on mobile*/
 .left {
@@ -167,59 +163,105 @@ header{
 
 /* mobile hamburger icon */
 
-label{
+#hamburger{
     display:flex;
-    order: 2;
     flex-direction:column;
     width:50px;
     cursor:pointer;
-    align-items: flex-end
-   }
+    align-items: flex-end;
+    background-color: inherit;
+    order: 2;
+    border: none;
+    padding: 0;
+    z-index: 100;
+}
    
-label span{
+#hamburger span{
     background: #fff;
     height:4px;
     margin: 4px 0;
     transition: .4s  cubic-bezier(0.68, -0.6, 0.32, 1.6);
 }
    
-span:nth-of-type(1){
-    width:55%;
+.bar1{
+    width:50%;
 }
 
-span:nth-of-type(2){
+.bar2{
     width:100%;
 }
 
-
-span:nth-of-type(3){
-    width:70%;
+.bar3{
+    width:75%;
 }
 
-
-input[type="checkbox"]{
-    display:none;
-}
-
-
-input[type="checkbox"]:checked ~ span:nth-of-type(1){
+.bar1Animate{
     transform-origin:bottom;
-    transform:rotatez(-45deg) translate(-5px,0px)
+    transform:rotatez(-45deg) translate(-3px,-1px)
 }
 
 
-input[type="checkbox"]:checked ~ span:nth-of-type(2){
-    
+.bar2Animate{
     transform-origin:top;
     transform:rotatez(45deg)
 }
 
 
-input[type="checkbox"]:checked ~ span:nth-of-type(3){
-    
+.bar3Animate{
     transform-origin:bottom;
-    width:50%;
-    transform: translate(-21px, -4px) rotatez(-45deg);
-
+    width:55%;
+    transform: translate(-21px, -5px) rotatez(-45deg);
 }
+
+/* mobile menu */
+
+#overlay {
+    height: 100%;
+    width: 0%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+#overlay.open {
+    width: 50%;
+}
+
+.overlay-content {
+position: relative;
+top: 25%;
+width: 100%;
+text-align: center;
+margin-top: 30px;
+}
+
+#overlay li {
+padding: 8px;
+text-decoration: none;
+font-size: 36px;
+color: #818181;
+display: block;
+transition: 0.3s;
+}
+
+#overlay li:nth-child(2){
+    display: none;
+}
+
+#overlay li:hover, #overlay li:focus {
+color: #f1f1f1;
+}
+
+#overlay .innerHam {
+position: absolute;
+top: 20px;
+right: 45px;
+font-size: 60px;
+}
+  
    
