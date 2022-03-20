@@ -11,6 +11,8 @@
     /* font-sizes */
     --fs-700: 14.375rem;
     --fs-600: 10rem;
+    --fs-575: 5.625rem;
+    --fs-550: 5rem;
     --fs-500: 2.5rem;
     --fs-450: 2.25rem;
     --fs-400: 1.875rem;
@@ -109,6 +111,8 @@ select {
 
 .fs-700 { font-size: var(--fs-700); }
 .fs-600 { font-size: var(--fs-600); }
+.fs-575 { font-size: var(--fs-575); }
+.fs-550 { font-size: var(--fs-550); }
 .fs-500 { font-size: var(--fs-500); }
 .fs-450 { font-size: var(--fs-450); }
 .fs-400 { font-size: var(--fs-400); }
@@ -145,6 +149,11 @@ header{
     margin: 0;
 }
 
+.intro {
+    height: 50vh;
+    padding: 5em 1em;
+}
+
 
 /* not enough room for this on mobile*/
 .left {
@@ -159,7 +168,6 @@ header{
 .left ul {
     list-style: none;
 }
-
 
 /* mobile hamburger icon */
 
@@ -229,7 +237,7 @@ header{
 }
 
 #overlay.open {
-    width: 50%;
+    width: 55%;
 }
 
 .overlay-content {
@@ -237,14 +245,15 @@ position: relative;
 top: 25%;
 width: 100%;
 text-align: center;
-margin-top: 30px;
+margin-top: 20%;
+padding: 0;
 }
 
 #overlay li {
 padding: 8px;
 text-decoration: none;
 font-size: 36px;
-color: #818181;
+color: #fff;
 display: block;
 transition: 0.3s;
 }
@@ -253,15 +262,25 @@ transition: 0.3s;
     display: none;
 }
 
-#overlay li:hover, #overlay li:focus {
-color: #f1f1f1;
+#overlay li:hover, 
+#overlay li:focus {
+color: #C3073F;
 }
 
-#overlay .innerHam {
+#overlay .innerham {
 position: absolute;
 top: 20px;
 right: 45px;
 font-size: 60px;
+}
+
+.is-blurred{
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+}
+
+.mobile-name {
+    z-index: 100;
 }
   
    
