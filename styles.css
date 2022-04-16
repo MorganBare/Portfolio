@@ -18,6 +18,11 @@
 
     /* font-families */
     --ff-bebas: 'Bebas Neue', cursive;
+
+    /* line heights */
+    --lh-200: 2;
+    --lh-100: 1;
+
 }
 
 @media (min-width: 320px){
@@ -147,6 +152,10 @@ select {
 .fs-300 { font-size: var(--fs-300); }
 .fs-200 { font-size: var(--fs-200); }
 .fs-100 { font-size: var(--fs-100); }
+
+/* Line Heights */
+
+.lh-100 { line-height: var(--lh-100); }
 
 
 /* components */
