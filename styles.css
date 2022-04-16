@@ -9,19 +9,51 @@
     --clr-light-red: 342, 93%, 40%;
 
     /* font-sizes */
-    --fs-700: 14.375rem;
-    --fs-600: 10rem;
-    --fs-575: 5.625rem;
-    --fs-550: 5rem;
-    --fs-500: 2.5rem;
-    --fs-450: 2.25rem;
-    --fs-400: 1.875rem;
-    --fs-300: 1.687rem;
-    --fs-200: 1.125rem;
+    --fs-600: 14.375rem;
+    --fs-500: 10rem;
+    --fs-400: 2.8125rem;
+    --fs-300: 1.875rem;
+    --fs-200: 1.687rem;
     --fs-100: 1rem;
 
     /* font-families */
     --ff-bebas: 'Bebas Neue', cursive;
+}
+
+@media (min-width: 320px){
+    :root {
+        /* font-sizes */
+    --fs-600: 4.7rem;
+    --fs-500: 5rem;
+    --fs-400: 1.8rem;
+    /* --fs-300: 1.875rem;
+    --fs-200: 1.687rem; */
+    --fs-100: 1rem;
+    }
+}
+
+@media (min-width: 375px){
+    :root {
+        /* font-sizes */
+    --fs-600: 5.5rem;
+    --fs-500: 5rem;
+    --fs-400: 2rem;
+    /* --fs-300: 1.875rem;
+    --fs-200: 1.687rem; */
+    --fs-100: 1rem;
+    }
+}
+
+@media (min-width: 425px){
+    :root {
+        /* font-sizes */
+    --fs-600: 6.3rem;
+    --fs-500: 5.8rem;
+    --fs-400: 2.6rem;
+    /* --fs-300: 1.875rem;
+    --fs-200: 1.687rem; */
+    --fs-100: 1rem;
+    }
 }
 
 /* ------------------- */
@@ -109,15 +141,9 @@ select {
 
 .uppercase { text-transform: uppercase; }
 
-.fs-700 { font-size: var(--fs-700); }
 .fs-600 { font-size: var(--fs-600); }
-.fs-575 { font-size: var(--fs-575); }
-.fs-550 { font-size: var(--fs-550); }
 .fs-500 { font-size: var(--fs-500); }
-.fs-450 { font-size: var(--fs-450); }
 .fs-400 { font-size: var(--fs-400); }
-.fs-375 { font-size: var(--fs-375); }
-.fs-350 { font-size: var(--fs-350); }
 .fs-300 { font-size: var(--fs-300); }
 .fs-200 { font-size: var(--fs-200); }
 .fs-100 { font-size: var(--fs-100); }
