@@ -151,7 +151,7 @@ header{
 }
 
 .intro {
-    height: 50vh;
+    height: auto;
     padding: 5em 1em;
 }
 
