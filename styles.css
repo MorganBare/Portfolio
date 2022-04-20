@@ -173,10 +173,6 @@ header{
     z-index: 100;
 }
 
-.top-nav {
-    
-}
-
 .top-nav-ul {
     list-style: none;
     flex-direction: column;
@@ -314,7 +310,7 @@ font-size: 60px;
     -webkit-filter: blur(5px);
 }
 
-/* Triangles and animations */
+/***** Triangles and animations ******/
 
 .triangle-container {
     width: 100%;
@@ -406,5 +402,9 @@ font-size: 60px;
     85% {fill: white};
     100% {fill: white;}
   }
+
+.projects-container {
+    margin-top: 22vh;
+}
 
   
