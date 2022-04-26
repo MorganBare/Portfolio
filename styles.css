@@ -455,4 +455,18 @@ font-size: 60px;
     flex-direction: row;
     gap: 1em;
 }
+
+.container--contact {
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+.container--contact p {
+    padding-top: .5em;
+}
   
+.social-contact {
+    justify-content: center;
+    gap: 2em;
+    padding: 1.5em 0;
+}
