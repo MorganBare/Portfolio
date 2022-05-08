@@ -443,12 +443,26 @@ font-size: 60px;
     justify-items: center;
 }
 
+@media (min-width: 700px){
+    .project-cards-container {
+        grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+        column-gap: 1em;
+    }
+}
+
 .project-card {
     grid-column: 2;
     background-color: #2A2A2F;
     padding: 1em;
     border-radius: 10px;
     max-width: 400px;
+}
+
+@media (min-width: 700px){
+    .project-card {
+        grid-column:auto;
+        max-width: 500px;
+    }
 }
 
 .project-card h4 {
