@@ -58,6 +58,16 @@
     --fs-400: 2.6rem;
     --fs-100: 1rem;
     }
+
+@media (min-width: 700px){
+    :root {
+        /* font-sizes */
+    --fs-600: 10rem;
+    --fs-500: 7rem;
+    --fs-450: 4rem;
+    --fs-400: 2.5rem;
+    --fs-100: 1rem;
+    }
 }
 
 /* ------------------- */
@@ -183,6 +193,13 @@ header{
 .intro {
     height: auto;
     padding: 2em 1em;
+    margin: 0 auto;
+}
+
+@media (min-width: 700px) {
+    .intro {
+        padding: 4em 4em;
+    }
 }
 
 
@@ -416,6 +433,7 @@ font-size: 60px;
     display: grid;
     grid-template-columns: 1em 1fr 1em;
     row-gap: 2em;
+    justify-items: center;
 }
 
 .project-card {
@@ -423,6 +441,7 @@ font-size: 60px;
     background-color: #2A2A2F;
     padding: 1em;
     border-radius: 10px;
+    max-width: 400px;
 }
 
 .project-card h4 {
