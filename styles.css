@@ -71,11 +71,16 @@
 @media (min-width: 1000px){
     :root {
         /* font-sizes */
-    --fs-600: 15rem;
-    --fs-500: 10rem;
-    --fs-450: 8rem;
-    --fs-400: 3.5rem;
-    --fs-100: 1rem;
+    
+    }
+
+@media (min-width: 1400px){
+    :root {
+        /* font-sizes */
+    --fs-600: 10rem;
+    --fs-500: 8rem;
+    --fs-450: 4rem;
+    --fs-400: 3rem;
     }
 }
 
