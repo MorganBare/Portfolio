@@ -67,12 +67,8 @@
     --fs-400: 2.5rem;
     --fs-100: 1rem;
     }
+}
 
-@media (min-width: 1000px){
-    :root {
-        /* font-sizes */
-    
-    }
 
 @media (min-width: 1400px){
     :root {
