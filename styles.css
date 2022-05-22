@@ -10,12 +10,21 @@
     --clr-light-red: 342, 93%, 40%;
 
     /* font-sizes */
-    --fs-600: 14.375rem;
+    --fs-600: 4.7rem;
+    --fs-500: 5rem;
+    --fs-450: 2.5rem;
+    --fs-400: 1.8rem;
+    --fs-300: 1.875rem;
+    --fs-200: 1.687rem;
+    --fs-100: 1rem;
+
+    /* --fs-600: 14.375rem;
     --fs-500: 10rem;
     --fs-400: 2.8125rem;
     --fs-300: 1.875rem;
     --fs-200: 1.687rem;
-    --fs-100: 1rem;
+    --fs-100: 1rem; */
+
 
     /* font-families */
     --ff-bebas: 'Bebas Neue', cursive;
@@ -24,17 +33,6 @@
     --lh-200: 2;
     --lh-100: 1;
 
-}
-
-@media (min-width: 320px){
-    :root {
-        /* font-sizes */
-    --fs-600: 4.7rem;
-    --fs-500: 5rem;
-    --fs-450: 2.5rem;
-    --fs-400: 1.8rem;
-    --fs-100: 1rem;
-    }
 }
 
 @media (min-width: 375px){
@@ -58,6 +56,7 @@
     --fs-400: 2.3rem;
     --fs-100: 1rem;
     }
+}
 
 @media (min-width: 700px){
     :root {
@@ -66,6 +65,16 @@
     --fs-500: 7rem;
     --fs-450: 4rem;
     --fs-400: 2.5rem;
+    --fs-100: 1rem;
+    }
+
+@media (min-width: 1000px){
+    :root {
+        /* font-sizes */
+    --fs-600: 15rem;
+    --fs-500: 10rem;
+    --fs-450: 8rem;
+    --fs-400: 3.5rem;
     --fs-100: 1rem;
     }
 }
