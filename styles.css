@@ -65,6 +65,7 @@
     --fs-500: 7rem;
     --fs-450: 4rem;
     --fs-400: 2.5rem;
+    --fs-300: 2rem;
     --fs-100: 1rem;
     }
 }
@@ -73,12 +74,14 @@
 @media (min-width: 1400px){
     :root {
         /* font-sizes */
-    --fs-600: 10rem;
-    --fs-500: 8rem;
+    --fs-600: 15rem;
+    --fs-500: 12rem;
     --fs-450: 4rem;
     --fs-400: 3rem;
     }
 }
+
+
 
 /* ------------------- */
 /* Reset               */
@@ -190,7 +193,6 @@ header{
 
 .mobile-name {
     order: 1;
-    font-size: var(--fs-300);
     z-index: 100;
 }
 
@@ -337,24 +339,12 @@ padding: 0;
 #overlay li {
 padding: 8px;
 text-decoration: none;
-font-size: 36px;
 color: #fff;
 display: block;
 transition: 0.3s;
 }
 
-#overlay li:nth-child(2){
-    display: none;
-}
-
 @media (min-width: 760px) {
-    #overlay li:nth-child(2){
-        display: block;
-    }
-
-    #overlay li:nth-child(3){
-        display: none;
-    }
 
     .mobile-name {
         display: none;
