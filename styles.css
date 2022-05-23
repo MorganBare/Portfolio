@@ -126,6 +126,7 @@ body {
     min-height: 100vh;
     background-color: hsl(var(--clr-black));
     color: white;
+    scroll-behavior: smooth;
 }
 
 /* make images easier to work with */
@@ -545,6 +546,7 @@ font-size: 60px;
         height: 292px;
         object-fit: cover;
         object-position: top;
+        align-self: center;
     }
 }
 

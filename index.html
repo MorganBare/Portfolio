@@ -18,9 +18,9 @@
 
         <nav class="top-nav" id="overlay">
             <ul class="flex top-nav-ul overlay-content">
-                <li class="fs-300" >Resume</li>
-                <li class="fs-300" >Projects</li>
-                <li class="fs-300" >Contact</li>
+                <li class="fs-300" ><a>Resume</a></li>
+                <li class="fs-300" ><a a href="#projects">Projects</a></li>
+                <li class="fs-300" ><a href="#contact">Contact</a></li>
             </ul>
         </nav>
         <h4 class="mobile-name fs-300">MJB</h4>
@@ -91,14 +91,14 @@
             </div>
         </div> <!-- /triangle-container -->
 
-        <div class="projects-container">
+        <div class="projects-container" id="projects">
             <h3 class="fs-450 text-light-red" style="text-align: center;">projects</h3>
             <div class="project-cards-container">
 
                 <div class="project-card">
                     <img class="card--img" src="./assets/previews/advice.gif" alt="">
                     <h4 class="fs-300">Advice Generator</h4>
-                    <p class="project--des">A simple advice generator using an API and React.</p>
+                    <p class="project--des">A simple advice generator built with React and Advice Slip JSON API.</p>
                     <div class="flex" style="justify-content: space-between; align-items: center; padding-top: 1em;">
                         <div class="tech-div fs-200">
                             <p>React</p>
@@ -137,7 +137,7 @@
                 <div class="project-card">
                     <img class="card--img" src="./assets/previews/cat.gif" alt="">
                     <h4 class="fs-300">Cat vs. Mouse</h4>
-                    <p class="project--des" >A shooting video game based on Space Invaders but with cats and mice.</p>
+                    <p class="project--des" >A shooting game based on Space Invaders built with Python/Pygame but with cats and mice.</p>
                     <div class="flex" style="justify-content: space-between; align-items: center; padding-top: 1em;">
                         <div class="tech-div fs-200">
                             <p>Python</p>
@@ -152,7 +152,7 @@
                 <div class="project-card">
                     <img class="card--img" src="./assets/previews/Chrome.png" alt="">
                     <h4 class="fs-300">German to English Google Chrome Extension</h4>
-                    <p class="project--des" >Google chrome extension that translates words from German to English.</p>
+                    <p class="project--des" >Google chrome extension that translates words from German to English using the API DeepL.</p>
                     <div class="flex" style="justify-content: space-between; align-items: center; padding-top: 1em;">
                         <div class="tech-div fs-200">
                             <p>Javascript</p>
@@ -202,15 +202,24 @@
                 </div>
 
                 <div class="project-card">
-                    <img src="" alt="">
-                    <h4 class="fs-300">Portfolio</h4>
-                    <p>My portfolio website</p>
+                    <img class="card--img" src="./assets/previews/portfolio.png" alt="">
+                    <h4 class="fs-300">This Portfolio</h4>
+                    <div class="flex" style="justify-content: space-between; align-items: center; padding-top: 1em;">
+                        <div class="tech-div fs-200">
+                            <p>Javascript</p>
+                            <p>HTML/CSS</p>
+                        </div>
+                        <div class="project--social">
+                            <a href="https://github.com/MorganBare/Art-gallery-website" target="_blank" ><img src="./assets/mark-github.svg" alt=""></a>
+                            <a href="https://elegant-morse-5cd661.netlify.app/" target="_blank" ><img src="./assets/external.svg" alt=""></a>
+                        </div>
+                    </div>
                 </div>
 
             </div> <!-- /project-cards-container -->
         </div> <!-- /projects-container -->
 
-        <div class="container--contact" style="text-align: center;">
+        <div class="container--contact" id="contact" style="text-align: center;">
             <h3 class="fs-450 text-light-red">contact</h3>
             <p class="fs-300">morganjbare@gmail.com</p>
             <div class="flex social-contact">
