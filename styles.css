@@ -304,11 +304,26 @@ header{
     transition: 0.5s;
 }
 
-@media (min-width: 760px) {
+/* @media (min-width: 760px) {
     #overlay{
         width: 100%;
         position: relative;
         background-color: hsl(var(--clr-black));
+    }
+} */
+
+@media (min-width: 760px) {
+    #overlay{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        display: block;
+        -webkit-transition: top 0.3s ease;
+        transition: top 0.3s ease;
+        margin: 0;
+        height: auto;
+        background-color: hsl(var(--clr-black), 90%);
+        z-index: 10;
     }
 }
 
@@ -328,8 +343,8 @@ header{
 @media (min-width: 760px) {
     .overlay-content{
         width: 100%;
-        position: relative;
         margin: 0;
+        padding-inline: 1em;
         display: flex;
         flex-direction: row;
         justify-content: space-between;

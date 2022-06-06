@@ -6,7 +6,7 @@ const bar3 = document.getElementById('bar3');
 const overlay = document.getElementById('overlay');
 const main = document.getElementById('main');
 const footer = document.getElementById('footer');
-
+let prevScrollPos = window.pageYOffset;
 
 hamburger.addEventListener("click", function(){
     console.log('click')
@@ -17,6 +17,17 @@ hamburger.addEventListener("click", function(){
     main.classList.toggle('is-blurred');
     footer.classList.toggle('is-blurred');
 })
+
+/* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+window.onscroll = function() {
+    let currentScrollPos = window.pageYOffset;
+    if (prevScrollPos > currentScrollPos) {
+      document.getElementById("overlay").style.top = "0";
+    } else {
+      document.getElementById("overlay").style.top = "-100px";
+    }
+    prevScrollPos = currentScrollPos;
+  }
    
 
 
