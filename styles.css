@@ -325,10 +325,6 @@ header{
     padding: 0;
 }
 
-.overlay-content li a {
-    text-decoration: none;
-    }
-
 @media (min-width: 760px) {
     .overlay-content{
         width: 100%;
@@ -342,10 +338,15 @@ header{
 
 #overlay li {
     padding: 8px;
-    text-decoration: none;
-    color: #fff;
     display: block;
     transition: 0.3s;
+}
+
+#nav-items {
+    text-decoration: none;
+    color: #fff;
+    -webkit-transition: color 800ms ease; /* For Safari 3.0 to 6.0 */
+    transition: color 800ms ease; /* For modern browsers */
 }
 
 @media (min-width: 760px) {
@@ -355,8 +356,10 @@ header{
     }
 }
 
-#overlay li:hover, 
-#overlay li:focus {
+#nav-items:hover, 
+#nav-items:focus,
+#nav-items:active {
+    text-decoration: none;
     color: #C3073F;
 }
 
