@@ -600,3 +600,14 @@ header{
     gap: 2em;
     padding: 1.5em 0;
 }
+
+@media (min-width: 800px){
+    .social-contact a img {
+        width: 45px;
+        height: 45px;
+    }
+}
+
+.social-contact a img:hover {
+    filter: opacity(0.3) drop-shadow(0 0 0 hsl(352, 100%, 50%));
+}
