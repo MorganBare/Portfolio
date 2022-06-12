@@ -592,7 +592,7 @@ header{
 
 @media (min-width: 1400px){
     .project-card {
-        min-width: 600px;
+        width: 575px;
     }
 }
 
