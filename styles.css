@@ -546,9 +546,25 @@ header{
 
 @media (min-width: 1000px){
     .project-cards-container {
-        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(325px, 1fr));
         column-gap: 2em;
         margin-inline: 2em;
+    }
+}
+
+@media (min-width: 1440px){
+    .project-cards-container {
+        grid-template-columns: 1fr 1fr;
+        row-gap: 3em;
+        column-gap: 0;
+    }
+}
+
+@media (min-width: 1600px){
+    .project-cards-container {
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 3em;
+        column-gap: 0;
     }
 }
 
@@ -570,7 +586,13 @@ header{
     .project-card {
         display: flex;
         flex-direction: column;
-        min-width: 464px;
+        max-width: 600px;
+    }
+}
+
+@media (min-width: 1400px){
+    .project-card {
+        min-width: 600px;
     }
 }
 
