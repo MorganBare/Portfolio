@@ -129,6 +129,10 @@ body {
     color: white;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* make images easier to work with */
 img,
 picutre {
@@ -304,13 +308,13 @@ header{
     transition: 0.5s;
 }
 
-/* @media (min-width: 760px) {
+@media (min-width: 760px) {
     #overlay{
         width: 100%;
         position: relative;
         background-color: hsl(var(--clr-black));
     }
-} */
+}
 
 @media (min-width: 760px) {
     #overlay{
