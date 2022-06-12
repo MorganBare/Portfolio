@@ -8,6 +8,7 @@ const navItemProjects = document.getElementById('nav-item-projects');
 const navItemContact = document.getElementById('nav-item-contact');
 const containerHeader = document.getElementById('container-header');
 const main = document.getElementById('main');
+const body = document.querySelector('body');
 const footer = document.getElementById('footer');
 let prevScrollPos = window.pageYOffset;
 
@@ -18,6 +19,7 @@ hamburger.addEventListener("click", function(){
     bar3.classList.toggle('bar3Animate');
     main.classList.toggle('is-blurred');
     footer.classList.toggle('is-blurred');
+    body.classList.toggle('disable-scroll');
 })
 
 navItemProjects.addEventListener('click', () =>{
