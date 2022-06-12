@@ -6,6 +6,7 @@ const bar3 = document.getElementById('bar3');
 const overlay = document.getElementById('overlay');
 const navItemProjects = document.getElementById('nav-item-projects');
 const navItemContact = document.getElementById('nav-item-contact');
+const containerHeader = document.getElementById('container-header');
 const main = document.getElementById('main');
 const footer = document.getElementById('footer');
 let prevScrollPos = window.pageYOffset;
@@ -47,6 +48,7 @@ window.onscroll = function() {
     }
     prevScrollPos = currentScrollPos;
   }
+
    
 
 

@@ -212,6 +212,12 @@ header{
     margin: 0 auto;
 }
 
+@media (max-width: 760px) {
+    .intro{
+        margin: 4em auto;
+    }
+}
+
 @media (min-width: 700px) {
     .intro {
         padding: 5.25em 0;
@@ -296,7 +302,7 @@ header{
 /* mobile menu */
 
 #overlay {
-    height: 100%;
+    height: 100vh;
     width: 0%;
     position: fixed;
     z-index: 1;
@@ -395,7 +401,26 @@ header{
     -webkit-filter: blur(5px);
 }
 
+@media (max-width: 760px) {
+    #container-header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: block;
+        margin: 0;
+        z-index: 10;
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between; /* aligns on vertical for column */
+        align-items:center;
+        background-color: hsl(var(--clr-black), 90%);
+    }
+}
+
+/*************************************/
 /***** Triangles and animations ******/
+/*************************************/
 
 .triangle-container {
     width: 100%;
