@@ -214,7 +214,7 @@ header{
 
 @media (max-width: 760px) {
     .intro{
-        margin: 4em auto;
+        margin-top: 4em;
     }
 }
 
@@ -225,7 +225,6 @@ header{
     }
 
 }
-
 
 /* not enough room for this on mobile*/
 .left {
