@@ -564,7 +564,7 @@ header{
     .project-cards-container {
         grid-template-columns: 1fr 1fr 1fr;
         row-gap: 3em;
-        column-gap: 3em;
+        column-gap: 2em;
     }
 }
 
