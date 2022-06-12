@@ -29,6 +29,7 @@ navItemProjects.addEventListener('click', () =>{
   bar1.classList.remove('bar1Animate');
   bar2.classList.remove('bar2Animate');
   bar3.classList.remove('bar3Animate');
+  body.classList.remove('disable-scroll');
 })
 
 navItemContact.addEventListener('click', () =>{
@@ -38,6 +39,7 @@ navItemContact.addEventListener('click', () =>{
   bar1.classList.remove('bar1Animate');
   bar2.classList.remove('bar2Animate');
   bar3.classList.remove('bar3Animate');
+  body.classList.remove('disable-scroll');
 })
 
 /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
